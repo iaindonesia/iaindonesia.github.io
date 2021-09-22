@@ -2,6 +2,9 @@
 <html lang="en-US">
 
 <head>
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -376,39 +379,16 @@
         <!-- End portfolio -->
 
 
-
-
-        <!-- Begin social section -->
-        <section id="social-section">
-
-            <!-- Begin page header-->
-            <div class="page-header-wrapper">
+        <!-- Begin cta -->
+        <section id="cta-section">
+            <div class="cta">
                 <div class="container">
-                    <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
-                        <h2>Join Us</h2>
-                        <div class="devider"></div>
-                        <p class="subtitle">Follow us on social networks</p>
-                    </div>
-                </div>
+                    <div class="row">
+                    </div> <!-- /.row -->
+                </div> <!-- /.container -->
             </div>
-            <!-- End page header-->
-
-            <div class="container">
-                <ul class="social-list">
-                    <li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.4s"><span
-                                class="rotate-box-icon"><i class="fa fa-instagram"></i></span></a></li>
-                    <li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.4s"><span
-                                class="rotate-box-icon"><i class="fa fa-linkedin"></i></span></a></li>
-                    <li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.4s"><span
-                                class="rotate-box-icon"><i class="fa fa-facebook"></i></span></a></li>
-
-                </ul>
-            </div>
-
         </section>
-        <!-- End social section -->
-
-
+        <!-- End cta -->
 
 
         <!-- Begin contact section -->
